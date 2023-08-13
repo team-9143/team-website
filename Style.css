@@ -117,20 +117,22 @@ li a:hover {
 /* continent grid */
 .Center {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 50% 50%;
   grid-row: 50% 50% ;
   column-gap: 35px;
   row-gap: 35px;
-  padding: 10px;
-  padding-right: 15vw;
-  padding-left: 15vw;
+  padding: 10px 15vw;
+  @media (max-width: 650px){
+    padding: 10px 5px; margin: 0px; row-gap: 10px; column-gap: 10px; grid-row: 25% 75%;
+  }
+
 }
 .item {
   padding: 0px 10px;
   font-size: 22px;
 }
 .item1{
-  background-color: var(--Gold);
+  align-self: center;
 }
 dt{
   font-size: 20px;
@@ -142,7 +144,20 @@ dd{
   font-size: 20px;
   font-family: inherit;
 }
-
+.sponsors{
+  align-items: center;
+  padding: 20px 15vw;
+}
+.imgRow{
+  grid-template-columns: 30% 40% 30%;
+  grid-template-rows: 50%;
+  column-gap: 40px;
+  align-content: center;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  margin: 10px;
+}
 
 
 /* slide show */
