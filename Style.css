@@ -48,6 +48,7 @@ li a {
   border-radius: 5px 5px 25px 25px;
   margin-top: 5px;
   padding: 20px 25px; 
+  /* mobile screen */
   @media (max-width: 585px) {
     margin: 20px 2px;
     margin-bottom: 10px;
@@ -61,8 +62,8 @@ li p{
   text-align: center;
   font-size: 20px;
   font: bold;
+  /* mobile screen */
   @media (max-width: 780px) {
-    /* margin-right: 230px; */
     visibility: hidden;
     width: 0px;
     height: 0px;
@@ -72,6 +73,7 @@ li p{
 li1 img{
   float: left;
   margin: 5px 15px;
+    /* mobile screen */
   @media (max-width: 585px) {
     visibility: hidden;
     float: right;
@@ -161,18 +163,75 @@ dd{
   font-family: inherit;
 }
 .sponsors{
-  align-items: center;
   padding: 20px 15vw;
+  margin-bottom: 30px;
 }
 .imgRow{
-  grid-template-columns: 30% 40% 30%;
-  grid-template-rows: 50%;
-  column-gap: 40px;
-  align-content: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 5px;
+  text-align: center; 
+  max-width: 1100px;
+  max-height: 1000px;
+  min-width: 50px;
+  min-height: 50px;
+  width: 100%;
+  height: 100%;
+  padding: auto;
+  margin: auto;
+}
+.Bottom{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+  padding: 10px 15vw;
+  @media (max-width: 650px){
+    margin: 10px 0px; 
+  }
+}
+.socials{
+  display: grid;
+  margin: 0px;
+  padding: 10px;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 50% 50%;
+  column-gap: 5px;
+}
+.socials img{
+  max-width: 70px;
+  max-height: 70px;  
+  min-width: 20px;
+  min-height: 20px;
+  width: 100%;
+  height: 100%;  
+  margin: 0px;
+}
+.bot{
+  text-align: center;
+  padding: 10px;
+}
+.bot img{
+  width: 100%;    
+  height: 100%;
+  max-width: 200px;
+  max-height: 230px;
+  min-width:  50px;
+  min-height: 76px;
+}
+.info{
+  font-family: inherit;
+  text-align: right;
+  padding: 10px;
+}
+.info p button {
+  min-width: max-content;
+  max-width: 300px;
   width: 100%;
   height: auto;
-  padding: 20px;
-  margin: 10px;
+  background-color: var(--Purple);
+  color: white;
+  border: none;
+  border-radius: 5px;
 }
 
 
