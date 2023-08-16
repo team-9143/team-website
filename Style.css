@@ -44,19 +44,41 @@ li a {
   text-decoration: none;
   background-color: var(--Purple);
   margin: 20px 5px;
+  margin-bottom: 10px;
   border-radius: 5px 5px 25px 25px;
   margin-top: 5px;
   padding: 20px 25px; 
+  @media (max-width: 585px) {
+    margin: 20px 2px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    float: left;
+
+  }
 }
 li p{
   float: left;
   text-align: center;
   font-size: 20px;
   font: bold;
+  @media (max-width: 780px) {
+    /* margin-right: 230px; */
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+    float: right;
+  }
 }
 li1 img{
   float: left;
   margin: 5px 15px;
+  @media (max-width: 585px) {
+    visibility: hidden;
+    float: right;
+    width: 0px;
+    height: 0px;
+    margin: 0px;
+  }
 
 
 }
