@@ -184,7 +184,7 @@ dd{
   display: grid;
   grid-template-columns: auto auto auto;
   text-align: center;
-  padding: 10px 15vw;
+  padding: 10px 10vw;
   @media (max-width: 650px){
     margin: 10px 0px; 
   }
