@@ -4,20 +4,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Contact Us</title>
+  
   <style>
     /* riordan branding colors */
     :root{
       --Gold: #f5aa00;
       --Purple: #31006f;
     }
-     h1{
-        font-size: 40px;
-        font-weight: bold;
-        font-family: Arial;
-        color: var(--Gold); 
-        text-align: center; 
-    } 
-
     form {
       display: flex;
       flex-direction: column;
@@ -31,7 +26,6 @@
       background-color: var(--Purple);
       margin: 0px;
     }
-
     form input, form textarea {
       padding: 10px;
       margin: 14px 0;
@@ -44,7 +38,6 @@
       font-size: 16px;
       font-family: Arial;
     }
-
     form button {
       align-self: center;
       width: auto;
@@ -63,23 +56,23 @@
       font-family: Arial;
       cursor: pointer;
     }
-    
     form button:hover {
       border-color: var(--Gold);
       background-color: var(--Purple);
       color: var(--Gold);
     }
-    
   </style>
 </head>
 <body>
   <div>
-    <form action="https://formsubmit.co/robotics@riordanhs.org" method="POST">
+    <div class="headbander">
       <h1>Contact Us!</h1>
+  </div>
+    <form action="https://formsubmit.co/robotics@riordanhs.org" method="POST">
         <!-- formsubmit settings -->
       <input type="text" name="_honey" style="display:none">
       <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://www.armorrobotics.org/thanks">
+      <input type="hidden" name="_next" value="Thank_you.html">
       <input type="hidden" name="_subject" value="Armor Robotics 9143 Contact Request">
 
       <input type="text" name="Name" placeholder="Full Name or Name of Organization" required>
@@ -90,5 +83,32 @@
       <button type="submit">Submit</button>
     </form>
   </div>
+  <div class="Bottom">
+    <div class="socials">   
+        <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.instagram.com%2Farmorrobotics9143%2F&sa=D&sntz=1&usg=AOvVaw2Zuho9U9RY88xn1LBueWUW"><img src="pics/Insta.png" alt="" width="100%" height="100%"></a>
+        <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.tiktok.com%2F%40armorrobotics9143&sa=D&sntz=1&usg=AOvVaw1kYevhbLWv3oljd0cgnay5"><img src="pics/tiktok.jpg" alt="" width="100%" height="100%"></a>
+        <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.chiefdelphi.com%2Fu%2Farmorrobotics9143&sa=D&sntz=1&usg=AOvVaw13SkP7EkUtwQiXn6DtFXNi"><img src="pics/cd.png" alt="" width="100%" height="100%"></a>
+        <a href="http://www.google.com/url?q=http%3A%2F%2Fthreads.net%2F%40armorrobotics9143&sa=D&sntz=1&usg=AOvVaw0Ea7VShiviMjoK68-6KB0D"><img src="pics/not_twitter.png" alt="" width="100%" height="100%"></a>
+        <a href="http://www.google.com/url?q=http%3A%2F%2Ffacebook.com%2Farmorrobotics9143&sa=D&sntz=1&usg=AOvVaw1SfBEXNU3gvVfKH_4uXYn3"><img src="pics/facebook.png" alt="" width="100%" height="100%"></a>
+        <a href="htts://www.Youtube.com/"><img src="pics/youtube.png" alt="" width="100%" height="100%"></a>
+        <a href="https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2Farmorrobotics9143&sa=D&sntz=1&usg=AOvVaw3Esyk-xONCfmOTrKiJr4E-"><img src="pics/github.png" alt="" width="100%" height="100%"></a>
+        <a href="FAQs.html"><img src="pics/wallparper.png" alt="" width="100%" height="100%"></a>
+    </div>
+
+    <div class="bot"><img src="pics/Bot_head.png" alt="logo" width="90%" height="85%"></div>
+
+    <div class="info">
+       <p>
+            <a href="ContactUs.html"><button> Contact Us</button></a>
+            <br> <br>
+            175 Frida Kahlo Way
+            <br><br>
+            San Francisco, CA <br> <br>
+            94112
+            <br> <br>
+            © COPYRIGHT 2023. ALL RIGHTS RESERVED.  
+        </p>
+    </div>
+</div>
 </body>
 </html>
