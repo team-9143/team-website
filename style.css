@@ -14,7 +14,11 @@ h2{
   font-family: Helvetica;
   text-align: center;
 }
-
+iframe{
+  max-width: 1000px;
+  max-height: 550px;
+  background-color: #31006f;
+}
 
 /* Nav Bar */
 ul {
