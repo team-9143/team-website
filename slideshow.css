@@ -1,5 +1,5 @@
-/* slide show */
-*{box-sizing: border-box}
+/* slideshow */
+* {box-sizing: border-box}
 body {font-family: Arial; margin:0; align-items: center;}
 .mySlides {display: none}
 img {vertical-align: middle;}
@@ -43,7 +43,7 @@ img {vertical-align: middle;}
   color: var(--Gold);
   font-size: 25px;
   padding: 8px 12px;
-  position: absolute;  
+  position: absolute;
   top: 100%;
   width: 100%;
   text-align: center;
@@ -81,7 +81,7 @@ img {vertical-align: middle;}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 

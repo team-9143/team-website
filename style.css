@@ -1,28 +1,31 @@
 /* riordan branding colors */
 :root{
-    --Gold: #f5aa00;
-    --Purple: #31006f;
+    --Gold: #F5A800;
+    --Purple: #31006F;
     --Black: #1c1c1c;
 }
+
 body{
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 h2{
   color: var(--Gold);
   font-size: 34px;
   font-family: Helvetica;
   text-align: center;
 }
+
 iframe{
   max-width: 1000px;
   max-height: 550px;
   background-color: #31006f;
 }
 
-/* front Bander*/
+/* banner */
 .headbander{
-  margin: 0px 0px 10px 0px; 
+  margin: 0px 0px 10px 0px;
   padding: 80px 30px 0px;
   width: auto;
   min-height: auto;
@@ -30,6 +33,7 @@ iframe{
   text-align-last: center;
   font-family: Arial;
 }
+
 .headbander h1{
   color: white;
   padding: 30px 5vh 0vh 30px;
@@ -37,6 +41,7 @@ iframe{
   font-family: inherit;
 
 }
+
 .headbander h2{
   color: var(--Gold);
   font-size: 45px;
@@ -44,7 +49,7 @@ iframe{
   font-family: inherit;
 }
 
-/* continent grid */
+/* content grid */
 .Center {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -52,37 +57,42 @@ iframe{
   column-gap: 35px;
   row-gap: 35px;
   padding: 10px 15vw;
-  @media (max-width: 650px){
+  @media (max-width: 650px) {
     padding: 10px 5px; margin: 0px; row-gap: 10px; column-gap: 10px; grid-row: 25% 75%;
   }
-
 }
+
 .item {
   padding: 0px 10px;
   font-size: 22px;
 }
+
 .item1{
   align-self: center;
 }
+
 dt{
   font-size: 20px;
   font-weight: bold;
   font-family: Arial;
   list-style: none;
 }
+
 dd{
   font-size: 20px;
   font-family: inherit;
 }
+
 .sponsors{
   padding: 20px 15vw;
   margin-bottom: 30px;
 }
+
 .imgRow{
   display: grid;
   grid-template-columns: auto auto auto;
   column-gap: 5px;
-  text-align: center; 
+  text-align: center;
   max-width: 1100px;
   max-height: 1000px;
   min-width: 50px;
@@ -92,15 +102,17 @@ dd{
   padding: auto;
   margin: auto;
 }
+
 .Bottom{
   display: grid;
   grid-template-columns: auto auto auto;
   text-align: center;
   padding: 10px 10vw;
   @media (max-width: 650px){
-    margin: 10px 0px; 
+    margin: 10px 0px;
   }
 }
+
 .socials{
   display: grid;
   margin: 0px;
@@ -109,32 +121,37 @@ dd{
   grid-template-rows: 50% 50%;
   column-gap: 5px;
 }
+
 .socials img{
   max-width: 70px;
-  max-height: 70px;  
+  max-height: 70px;
   min-width: 20px;
   min-height: 20px;
   width: 100%;
-  height: 100%;  
+  height: 100%;
   margin: 0px;
 }
+
 .bot{
   text-align: center;
   padding: 10px;
 }
+
 .bot img{
-  width: 100%;    
+  width: 100%;
   height: 100%;
   max-width: 200px;
   max-height: 230px;
   min-width:  50px;
   min-height: 76px;
 }
+
 .info{
   font-family: inherit;
   text-align: right;
   padding: 10px;
 }
+
 .info p button {
   min-width: max-content;
   max-width: 300px;
@@ -145,5 +162,3 @@ dd{
   border: none;
   border-radius: 5px;
 }
-
-
