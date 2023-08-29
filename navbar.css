@@ -54,7 +54,7 @@ li p{
   }
 }
 
-li img{
+ul li:first-child{
   float: left;
   margin: 5px 15px;
     /* mobile screen */
