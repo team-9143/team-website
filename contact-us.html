@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Contact Us</title>
+
+  <style>
+    /* riordan branding colors */
+    :root{
+      --Gold: #F5A800;
+      --Purple: #31006F;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      width: auto;
+      height: auto;
+      max-width: 700px;
+      max-height: 1000px;
+      padding: 2vw 4vw;
+      border-radius: 10px;
+      background-color: var(--Purple);
+      margin: 0px;
+    }
+
+    form input, form textarea {
+      padding: 10px;
+      margin: 14px 0;
+      border: none;
+      outline: 8px;
+      outline-color: var(--Gold);
+      outline-style: solid;
+      background-color: white;
+      border-radius: 12px;
+      font-size: 16px;
+      font-family: Arial;
+    }
+
+    form button {
+      align-self: center;
+      width: auto;
+      height: 60px;
+      padding: 10px 20px;
+      margin: 10px auto 0;
+      border-radius: 20px;
+      border: none;
+      outline: auto;
+      outline-color: var(--Purple);
+      outline-style: groove;
+      background-color: var(--Gold);
+      color: var(--Purple);
+      font-size: 24px;
+      font-weight: bold;
+      font-family: Arial;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      border-color: var(--Gold);
+      background-color: var(--Purple);
+      color: var(--Gold);
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="home.html" ><img src="images/full-white-bot.png" alt="home" width="28px" height="45px"></a></li>
+    <li><p>Armor Robotics 9143</p></li>
+    <li><a href="faqs.html">About Us</a></li>
+    <li><a href="#Resources">Resources</a></li>
+    <li><a href="https://www.riordanhs.org/">School Website</a></li>
+    <li><a href="#Support Us">Support Us</a></li>
+</ul>
+
+  <div>
+    <div class="headbander">
+      <h1>Contact Us!</h1>
+    </div>
+
+    <form action="https://formsubmit.co/robotics@riordanhs.org" method="POST">
+        <!-- formsubmit settings -->
+      <input type="text" name="_honey" style="display:none">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="thank-you.html">
+      <input type="hidden" name="_subject" value="Armor Robotics 9143 Contact Request">
+
+      <input type="text" name="Name" placeholder="Full Name or Name of Organization" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="text" name="Phone&nbsp;Number" placeholder="+1 (000)-000-0000 (optional)">
+      <input type="text" name="Subject" placeholder="Subject" required>
+      <textarea name="Message" rows="6" placeholder="Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <div class="bottom">
+    <div class="socials">
+      <a href="https://www.instagram.com/armorrobotics9143/"><img src="images/instagam.png" alt="" width="100%" height="100%"></a>
+      <a href="https://www.tiktok.com/@armorrobotics9143"><img src="images/tiktok.jpg" alt="" width="100%" height="100%"></a>
+      <a href="https://www.chiefdelphi.com/u/armorrobotics9143"><img src="images/cd.png" alt="" width="100%" height="100%"></a>
+      <a href="https://www.threads.net/@armorrobotics9143"><img src="images/threads.png" alt="" width="100%" height="100%"></a>
+      <a href="https://www.facebook.com/armorrobotics9143"><img src="images/facebook.png" alt="" width="100%" height="100%"></a>
+      <a href="htts://www.Youtube.com/"><img src="images/youtube.png" alt="" width="100%" height="100%"></a>
+      <a href=" https://github.com/armorrobotics9143"><img src="images/github.png" alt="" width="100%" height="100%"></a>
+    </div>
+
+    <div class="bot"><img src="images/bot-head.png" alt="logo" width="90%" height="85%"></div>
+
+    <div class="info">
+      <p>
+        <a href="contact-us.html"><button> Contact Us</button></a>
+        <br> <br>
+        175 Frida Kahlo Way
+        <br> <br>
+        San Francisco, CA <br> <br>
+        94112
+        <br> <br>
+        © COPYRIGHT 2023. ALL RIGHTS RESERVED.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

@@ -50,7 +50,7 @@ iframe{
 }
 
 /* content grid */
-.Center {
+.center {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-row: 50% 50% ;
@@ -88,7 +88,7 @@ dd{
   margin-bottom: 30px;
 }
 
-.imgRow{
+.img-row{
   display: grid;
   grid-template-columns: auto auto auto;
   column-gap: 5px;
@@ -103,7 +103,7 @@ dd{
   margin: auto;
 }
 
-.Bottom{
+.bottom{
   display: grid;
   grid-template-columns: auto auto auto;
   text-align: center;

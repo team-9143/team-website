@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Armor Robotics 9143</title>
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="slideshow.css">
+  <script src="slideshow.js"></script>
+
+  <style>
+    /* slideshow */
+    body {font-family: Arial; margin:0; align-items: center;}
+    .my-slides {display: none}
+    img {vertical-align: middle;}
+
+    /* Slideshow container */
+    #slideshow-container {
+      max-width: 10000px;
+      position: relative;
+      margin: 20px 30vh;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: var(--Gold);
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.4s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right  */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through  */
+    .prev:hover, .next:hover {
+      background-color: var(--Purple);
+    }
+
+    /* Caption text  */
+    .text {
+      color: var(--Gold);
+      font-size: 25px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc)  */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 10px 14px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 20px;
+      width: 20px;
+      margin: 0 2px;
+      background-color: var(--Purple);
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 1.0s ease;
+    }
+
+    .active, .dot:hover {
+      background-color: var(--Gold);
+    }
+
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }
+  </style>
+</head>
+<body onload="setSlide(0)">
+  <ul>
+      <li><a href="home.html" ><img src="images/full-white-bot.png" alt="home" width="28px" height="45px"></a></li>
+      <li><p>Armor Robotics 9143</p></li>
+      <li><a href="faqs.html">About Us</a></li>
+      <li><a href="#Resources">Resources</a></li>
+      <li><a href="https://www.riordanhs.org/">School Website</a></li>
+      <li><a href="#Support Us">Support Us</a></li>
+  </ul>
+
+  <div class="headbander">
+    <h1>Armor Robotics</h1>
+    <h2>FRC Team 9143</h2>
+  </div>
+
+
+  <div class="center">
+    <div class="item1"><img src="images/dustbin.jpg" alt="Dustbin" width="100%%" height="100%"></div>
+    <div class="item">
+      <h2> Who Are We?</h2>
+      <p>
+        Armor Robotics (FRC Team 9143) participates in competition robotics through the FIRST® organization.
+
+        FIRST® Robotics Competition (FRC) is a STEM-based sport for ages 14-18. FIRST® embodies a set of core values that include discovery, innovation, impact, inclusion, teamwork, and fun.
+
+        Armor Robotics supports a variety of interests including design and strategy, hardware engineering, software engineering, and business entrepreneurship.
+      </p>
+      <a href="https://www.firstinspires.org/about/vision-and-mission">Learn more about FIRST®</a>
+    </div>
+    <div class="item">
+      <h2>Our Goals</h2>
+      <p><b>Our 2023-2024 goals include:</b></p>
+      <dl>
+        <dt>Building student and mentor membership</dt>
+        <br>
+        <dd>- Participate in 1 off-season competition each year</dd>
+        <br>
+        <dd>- Participate in 2 regional FIRST competitions each game season</dd>
+        <br>
+        <dt>Increasing team diversity and building team culture</dt>
+        <br>
+        <dd>- Participate in school club rushes, pep rallies, open houses, and other activities</dd>
+        <br>
+        <dd>- Actively promote the team on social media platforms</dd>
+        <br>
+        <dt>Increasing learning for team members (technical and soft skills)</dt>
+        <br>
+        <dd>- Ensure students are tool certified</dd>
+        <br>
+        <dd>- Provide business seminars (scheduling, social media, scouting, engineering design process, etc.)</dd>
+        <br>
+        <dd>- Participate in WRRF events with a minimum of 10% of students</dd>
+        <br>
+        <dt>Developing student leaders</dt>
+        <br>
+        <dd>- Provide leadership seminars/training (e.g., collaboration, communication, performance)</dd>
+        <br>
+        <dd>- Provide student mentorship</dd>
+        <br>
+        <dt>Connecting and partnering with other students and/or teams</dt>
+        <br>
+        <dd>- Plan and execute two or more programs, events, or activities per semester</dd>
+        <br>
+        <dd>- Plan Summer 2024 meetings and events</dd>
+      </dl>
+    </div>
+
+    <div class="item1">
+      <img src="images/blue-bander-team.jpg" alt="team image" width="100%" >
+      <br>
+      <br>
+      <img src="images/9143-team.jpg" alt="Team Pic" width="100%"></div>
+    <div class="item1"><img src="images/dustbin-2.jpg" alt="Dustbin" width="100%"></div>
+    <div class="item">
+      <h2>2022-23&nbsp;Season</h2>
+      <p>Standing at a little under 30 inches and weighing in at roughly 80 pounds, Dustbin is the first child of Team 9143. It uses a West Coast drivetrain and modified "Everybot" intake to be quick and agile in matches and has the ability to score cubes and cones by shooting them. With auto-balance capabilities and a modular autonomous selector, nothing is a match for Dustbin!</p>
+      <a href="#dustbin-page"><p>Learn More</p></a>
+    </div>
+  </div>
+
+  <!-- slideshow -->
+  <div id="slideshow-container">
+    <div class="my-slides fade">
+      <div class="numbertext">1 / 6</div>
+      <img src="slideshow/sfr-9143.JPG" alt="pic-1" style="width:100%">
+      <div class="text">SVR 2023</div>
+    </div>
+
+    <div class="my-slides fade">
+      <div class="numbertext">2 / 6</div>
+      <img src="slideshow/bot-with-9143.jpeg" alt="pic-2" style="width:100%">
+      <div class="text">SVR 2023</div>
+    </div>
+
+    <div class="my-slides fade">
+      <div class="numbertext">3 / 6</div>
+      <img src="slideshow/bot-with-cube.jpeg" alt="pic-3" style="width: 100%">
+      <div class="text">SFR 2023</div>
+    </div>
+
+    <div class="my-slides fade">
+      <div class="numbertext">4 / 6</div>
+      <img src="slideshow/sfr-pit.PNG" alt="pic-4" style="width: 100%">
+      <div class="text">SFR 2023</div>
+    </div>
+
+    <div class="my-slides fade">
+      <div class="numbertext">5 / 6</div>
+      <img src="slideshow/calgames-pit.JPG" alt="pic-5" style="width:100%">
+      <div class="text">Cal Games 2019</div>
+    </div>
+
+    <div class="my-slides fade">
+      <div class="numbertext">6 / 6</div>
+      <img src="slideshow/calgames-driving.JPG" alt="pic-6" style="width:100%">
+      <div class="text">Cal Games 2019</div>
+    </div>
+
+    <a class="prev" onclick="changeSlide(-1)">❮</a>
+    <a class="next" onclick="changeSlide(1)">❯</a>
+
+    <br>
+
+    <div style="text-align: center">
+      <span class="dot" onclick="setSlide(0)"></span>
+      <span class="dot" onclick="setSlide(1)"></span>
+      <span class="dot" onclick="setSlide(2)"></span>
+      <span class="dot" onclick="setSlide(3)"></span>
+      <span class="dot" onclick="setSlide(4)"></span>
+      <span class="dot" onclick="setSlide(5)"></span>
+    </div>
+  </div>
+
+  <div class="sponsors">
+    <h2>Notable Sponsors</h2>
+    <div class="img-row">
+      <img src="images/first.png" alt="sponsors1" width="100%" height="100%" >
+      <img src="images/riordan-logo.png" alt="sponsors2" width="100%" height="100%">
+      <img src="images/first-norcal.png" alt="sponsors3" width="100%"  height="100%">
+    </div>
+  </div>
+
+  <div class="bottom">
+    <div class="socials">
+      <a href="https://www.instagram.com/armorrobotics9143/"><img src="images/instagam.png" alt="" width="100%" height="100%"></a>
+      <a href="https://www.tiktok.com/@armorrobotics9143"><img src="images/tiktok.jpg" alt="" width="100%" height="100%"></a>
+      <a href="https://www.chiefdelphi.com/u/armorrobotics9143"><img src="images/cd.png" alt="" width="100%" height="100%"></a>
+      <a href="https://www.threads.net/@armorrobotics9143"><img src="images/threads.png" alt="" width="100%" height="100%"></a>
+      <a href="https://www.facebook.com/armorrobotics9143"><img src="images/facebook.png" alt="" width="100%" height="100%"></a>
+      <a href="htts://www.Youtube.com/"><img src="images/youtube.png" alt="" width="100%" height="100%"></a>
+      <a href=" https://github.com/armorrobotics9143"><img src="images/github.png" alt="" width="100%" height="100%"></a>
+    </div>
+
+    <div class="bot"><img src="images/bot-head.png" alt="logo" width="90%" height="85%"></div>
+
+    <div class="info">
+      <p>
+        <a href="contact-us.html"><button> Contact Us</button></a>
+        <br> <br>
+        175 Frida Kahlo Way
+        <br> <br>
+        San Francisco, CA <br> <br>
+        94112
+        <br> <br>
+        © COPYRIGHT 2023. ALL RIGHTS RESERVED.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
