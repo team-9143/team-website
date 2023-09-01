@@ -24,7 +24,7 @@ iframe{
 }
 
 /* banner */
-.headbander{
+.headbanner{
   margin: 0px 0px 10px 0px;
   padding: 80px 30px 0px;
   width: auto;
@@ -34,7 +34,7 @@ iframe{
   font-family: Arial;
 }
 
-.headbander h1{
+.headbanner h1{
   color: white;
   padding: 30px 5vh 0vh 30px;
   font-size: 95px;
@@ -42,7 +42,7 @@ iframe{
 
 }
 
-.headbander h2{
+.headbanner h2{
   color: var(--Gold);
   font-size: 45px;
   padding-bottom: 5vh;
