@@ -1,8 +1,8 @@
 /* riordan branding colors */
 :root{
-    --Gold: #F5A800;
-    --Purple: #31006F;
-    --Black: #1c1c1c;
+    --gold: #F5A800;
+    --purple: #31006F;
+    --black: #1c1c1c;
 }
 
 body{
@@ -11,7 +11,7 @@ body{
 }
 
 h2{
-  color: var(--Gold);
+  color: var(--gold);
   font-size: 34px;
   font-family: Helvetica;
   text-align: center;
@@ -29,7 +29,7 @@ iframe{
   padding: 80px 30px 0px;
   width: auto;
   min-height: auto;
-  background-color: var(--Purple);
+  background-color: var(--purple);
   text-align-last: center;
   font-family: Arial;
 }
@@ -43,7 +43,7 @@ iframe{
 }
 
 .headbander h2{
-  color: var(--Gold);
+  color: var(--gold);
   font-size: 45px;
   padding-bottom: 5vh;
   font-family: inherit;
@@ -105,9 +105,9 @@ dd{
 
 .bottom{
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 25% 50% 25%;
   text-align: center;
-  padding: 10px 10vw;
+  margin: 10px 10vw;
   @media (max-width: 650px){
     margin: 10px 0px;
   }
@@ -116,49 +116,85 @@ dd{
 .socials{
   display: grid;
   margin: 0px;
-  padding: 10px;
+  margin-right: 25%;
+  padding: 0px;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 50% 50%;
-  column-gap: 5px;
+  column-gap: 10px;
 }
-
 .socials img{
-  max-width: 70px;
-  max-height: 70px;
+  max-width: 80px;
+  max-height: 80px;
   min-width: 20px;
   min-height: 20px;
   width: 100%;
   height: 100%;
-  margin: 0px;
+  margin: 0px;  
+  @media (max-width: 670px) {
+    width: 50%;
+    height: 50%;
+  }
 }
 
 .bot{
   text-align: center;
-  padding: 10px;
+  margin: 10px;
+  @media (max-width: 670px) {
+    visibility: hidden;
+    width: 0px;
+    margin: 0px;
+  }
 }
 
 .bot img{
+  text-align: center;
   width: 100%;
   height: 100%;
-  max-width: 200px;
+  max-width: 150px;
   max-height: 230px;
   min-width:  50px;
   min-height: 76px;
+
 }
 
 .info{
   font-family: inherit;
   text-align: right;
-  padding: 10px;
 }
 
-.info p button {
-  min-width: max-content;
-  max-width: 300px;
+.info p{
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 10px; 
+}
+.info button{
+  background-color: var(--purple);
+  color: white;
+  font-size: bolder;
+  margin: 5px;
+  padding: 5px;
+  max-width: 550px;
+  max-height: 50px;
   width: 100%;
+  height: 100%;
+  border-radius: 10px 25px;
+  border: none;  
+}
+/* .info button {
+  min-width: min-content;
+  max-width: 100px;
+  width: 100%;
+  padding: 15px 100%;
   height: auto;
-  background-color: var(--Purple);
+  background-color: var(--purple);
   color: white;
   border: none;
-  border-radius: 5px;
+
+  font:caption; 
+}*/
+.info button:hover{
+  border-color: var(--gold);
+  background-color: var(--gold);
+  color: var(--purple);
+  font-size: bolder;
+  
 }
