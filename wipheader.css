@@ -13,6 +13,7 @@
   box-sizing: border-box;
 }
 
+/* TODO: move to main stylesheet */
 body {
   margin: 0;
 }
@@ -46,9 +47,8 @@ nav > ul {
 nav > ul > li {
   display: inline-block;
   position: relative;
-  padding: 0 15px;
   width: fit-content;
-  text-align: center;
+  padding: 0 15px;
 }
 
 nav a {
@@ -61,19 +61,13 @@ nav .dropdown-menu a {
   margin: 5px 0;
 }
 
-/* Negate margin collapse by doubling top margin for subsequent children */
-nav .sub-dropdown-menu a:not(:first-child) {
-  margin-top: 10px;
-}
-
 nav .dropdown-menu {
   display: none;
   position: absolute;
   left: 0px;
-  padding: 10px;
   width: 100%;
   min-width: fit-content;
-  text-align: left;
+  padding: 10px;
   white-space: nowrap;
   background-color: var(--r-purple);
 }
@@ -83,25 +77,38 @@ nav .sub-dropdown {
 }
 
 nav .sub-dropdown-button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   width: 100%;
+  padding-right: 10px;
+}
+
+nav .sub-dropdown-button span {
+  margin-left: auto;
+  padding-left: 0.5em;
+  font-size: 1.2em;
+  line-height: 0%;
 }
 
 nav .sub-dropdown-menu {
   display: inline-block;
   position: absolute;
-  top: 0;
-  border-right: 5px solid #01003F;
-  border-bottom: 5px solid #01003F;
-  border-radius: 5px;
+  top: 5px;
   padding: 10px;
-  width: fit-content;
-  text-align: left;
-  white-space: nowrap;
   background-color: var(--r-purple);
 
   visibility: hidden;
   transition: visibility 0s 0.25s;
+}
+
+/* Negate margin collapse by doubling top margin for subsequent children */
+nav .sub-dropdown-menu a:not(:first-child) {
+  margin-top: 10px;
+}
+
+nav .dropdown-menu, nav .sub-dropdown-menu {
+  border: 5px solid #01003F;
+  border-radius: 5px;
 }
 
 nav .active, nav .nav-link:hover, nav li:hover a.nav-dropdown, nav .sub-dropdown:hover a.sub-dropdown-button {
@@ -115,10 +122,4 @@ nav li:hover .dropdown-menu {
 nav .sub-dropdown:hover > .sub-dropdown-menu {
   display: inline-block;
   visibility: visible;
-}
-
-nav .sub-dropdown-button span {
-  vertical-align: center;
-  font-size: 1.2em;
-  line-height: 0%;
 }
