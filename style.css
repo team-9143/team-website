@@ -24,7 +24,7 @@ iframe{
 }
 
 /* banner */
-.headbander{
+.headbanner{
   margin: 0px 0px 10px 0px;
   padding: 80px 30px 0px;
   width: auto;
@@ -34,7 +34,7 @@ iframe{
   font-family: Arial;
 }
 
-.headbander h1{
+.headbanner h1{
   color: white;
   padding: 30px 5vh 0vh 30px;
   font-size: 95px;
@@ -42,7 +42,7 @@ iframe{
 
 }
 
-.headbander h2{
+.headbanner h2{
   color: var(--gold);
   font-size: 45px;
   padding-bottom: 5vh;
@@ -119,7 +119,11 @@ dd{
   margin-right: 25%;
   padding: 0px;
   grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 50%;
   column-gap: 10px;
+  max-width: 1500px;
+  min-width: 300px;
+  width: 100%;
 }
 .socials img{
   max-width: 80px;
@@ -129,16 +133,12 @@ dd{
   width: 100%;
   height: 100%;
   margin: 0px;  
-  @media (max-width: 670px) {
-    width: 50%;
-    height: 50%;
-  }
 }
 
 .bot{
   text-align: center;
   margin: 10px;
-  @media (max-width: 670px) {
+  @media (max-width: 960px) {
     visibility: hidden;
     width: 0px;
     margin: 0px;
@@ -169,7 +169,7 @@ dd{
 .info button{
   background-color: var(--purple);
   color: white;
-  font-size: bolder;
+  font-size: 24px;
   margin: 5px;
   padding: 5px;
   max-width: 550px;
@@ -177,7 +177,7 @@ dd{
   width: 100%;
   height: 100%;
   border-radius: 10px 25px;
-  border: none;  
+  border: none; 
 }
 /* .info button {
   min-width: min-content;
@@ -195,6 +195,4 @@ dd{
   border-color: var(--gold);
   background-color: var(--gold);
   color: var(--purple);
-  font-size: bolder;
-  
 }
