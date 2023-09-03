@@ -74,7 +74,7 @@ nav .dropdown-menu {
 
   transform-origin: top;
   transform: scaleY(0);
-  transition: transform 0.15s linear;
+  transition: transform 0.15s ease-in;
 }
 
 nav .sub-dropdown {
@@ -123,6 +123,7 @@ nav .active, nav .nav-link:hover, nav li:hover a.nav-dropdown, nav .sub-dropdown
 
 nav li:hover .dropdown-menu {
   transform: scaleY(1);
+  transition: transform 0.15s ease-out;
 }
 
 nav .sub-dropdown:hover > .sub-dropdown-menu {
