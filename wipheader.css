@@ -62,14 +62,19 @@ nav .dropdown-menu a {
 }
 
 nav .dropdown-menu {
-  display: none;
+  display: block;
   position: absolute;
+  z-index: 1;
   left: 0px;
   width: 100%;
   min-width: fit-content;
   padding: 10px;
   white-space: nowrap;
   background-color: var(--r-purple);
+
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: transform 0.15s linear;
 }
 
 nav .sub-dropdown {
@@ -97,6 +102,7 @@ nav .sub-dropdown-menu {
   padding: 10px;
   background-color: var(--r-purple);
 
+  /* Delay appearance */
   visibility: hidden;
   transition: visibility 0s 0.25s;
 }
@@ -116,10 +122,9 @@ nav .active, nav .nav-link:hover, nav li:hover a.nav-dropdown, nav .sub-dropdown
 }
 
 nav li:hover .dropdown-menu {
-  display: block;
+  transform: scaleY(1);
 }
 
 nav .sub-dropdown:hover > .sub-dropdown-menu {
-  display: inline-block;
   visibility: visible;
 }
