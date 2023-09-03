@@ -1,0 +1,124 @@
+@font-face {
+  font-family: Myriad Pro;
+  src: url(fonts/Myriad_Pro/MyriadPro-Regular.otf) format("opentype");
+}
+
+/* Riordan branding colors */
+:root{
+  --r-gold: #F5A800;
+  --r-purple: #31006F;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  background-color: var(--r-purple);
+}
+
+nav {
+  display: flex;
+  flex-flow: row wrap;
+  border-bottom: 5px solid var(--r-gold);
+  font-family: 'Myriad Pro';
+}
+
+nav .logo {
+  display: inline-block;
+  margin: 2px;
+}
+
+nav > ul {
+  display: inline-block;
+  margin: 1em 20px 1em auto;
+  align-self: center;
+  padding: 0;
+  list-style-type: none;
+  font-size: 1.1em;
+}
+
+nav > ul > li {
+  display: inline-block;
+  position: relative;
+  padding: 0 15px;
+  width: fit-content;
+  text-align: center;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+nav .dropdown-menu a {
+  margin: 5px 0;
+}
+
+/* Negate margin collapse by doubling top margin for subsequent children */
+nav .sub-dropdown-menu a:not(:first-child) {
+  margin-top: 10px;
+}
+
+nav .dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 0px;
+  padding: 10px;
+  width: 100%;
+  min-width: fit-content;
+  text-align: left;
+  white-space: nowrap;
+  background-color: var(--r-purple);
+}
+
+nav .sub-dropdown {
+  position: relative;
+}
+
+nav .sub-dropdown-button {
+  display: inline-block;
+  width: 100%;
+}
+
+nav .sub-dropdown-menu {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  border-right: 5px solid #01003F;
+  border-bottom: 5px solid #01003F;
+  border-radius: 5px;
+  padding: 10px;
+  width: fit-content;
+  text-align: left;
+  white-space: nowrap;
+  background-color: var(--r-purple);
+
+  visibility: hidden;
+  transition: visibility 0s 0.25s;
+}
+
+nav .active, nav .nav-link:hover, nav li:hover a.nav-dropdown, nav .sub-dropdown:hover a.sub-dropdown-button {
+  color: var(--r-gold);
+}
+
+nav li:hover .dropdown-menu {
+  display: block;
+}
+
+nav .sub-dropdown:hover > .sub-dropdown-menu {
+  display: inline-block;
+  visibility: visible;
+}
+
+nav .sub-dropdown-button span {
+  vertical-align: center;
+  font-size: 1.2em;
+  line-height: 0%;
+}
