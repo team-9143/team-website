@@ -164,7 +164,7 @@ dd{
 .info p{
   margin-top: 5px;
   padding: 10px;
-  font-size: 10px; 
+  font-size: 11px; 
 }
 .info button{
   background-color: var(--purple);
@@ -178,6 +178,7 @@ dd{
   height: 100%;
   border-radius: 10px 25px;
   border: none; 
+  transition: background-color 0.8s ease-out;
 }
 /* .info button {
   min-width: min-content;
