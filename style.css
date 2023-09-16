@@ -31,7 +31,6 @@ iframe{
   min-height: auto;
   background-color: var(--purple);
   text-align-last: center;
-  font-family: Arial;
 }
 
 .headbanner h1{
@@ -74,13 +73,11 @@ iframe{
 dt{
   font-size: 20px;
   font-weight: bold;
-  font-family: Arial;
   list-style: none;
 }
 
 dd{
   font-size: 20px;
-  font-family: inherit;
 }
 
 .sponsors{
@@ -169,7 +166,7 @@ dd{
 .info button{
   background-color: var(--purple);
   color: white;
-  font-size: 24px;
+  font-size: 100%;
   margin: 5px;
   padding: 5px;
   max-width: 550px;
@@ -180,18 +177,7 @@ dd{
   border: none; 
   transition: background-color 0.8s ease-out;
 }
-/* .info button {
-  min-width: min-content;
-  max-width: 100px;
-  width: 100%;
-  padding: 15px 100%;
-  height: auto;
-  background-color: var(--purple);
-  color: white;
-  border: none;
 
-  font:caption; 
-}*/
 .info button:hover{
   border-color: var(--gold);
   background-color: var(--gold);
