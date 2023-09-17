@@ -99,87 +99,95 @@ dd{
   padding: auto;
   margin: auto;
 }
-
+/* bottom footer ==> pain*/
 .bottom{
   display: grid;
-  grid-template-columns: 25% 50% 25%;
+  grid-template-columns: 50% auto;
+  grid-template-rows: auto auto;
+  padding: 10px 10vw;
   text-align: center;
-  margin: 10px 10vw;
-  @media (max-width: 650px){
-    margin: 10px 0px;
+}
+.grid-item-1{
+  
+  @media (max-width: 850px) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
   }
 }
-
 .socials{
   display: grid;
-  margin: 0px;
-  margin-right: 25%;
-  padding: 0px;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 50%;
   column-gap: 10px;
-  max-width: 1500px;
-  min-width: 300px;
-  width: 100%;
+  row-gap: 15px;
+  width: auto;
+  
 }
 .socials img{
-  max-width: 80px;
-  max-height: 80px;
+  max-width: 100px;
+  max-height: 100px;
   min-width: 20px;
   min-height: 20px;
-  width: 100%;
-  height: 100%;
-  margin: 0px;  
+  /* margin: 10px;
+  padding: 5px; */
+}
+.grid-item-2
+{
+  margin: 0px;
+  padding: 20px;
+  padding-top: 0px;
+  max-height: 200px;
 }
 
 .bot{
   text-align: center;
-  margin: 10px;
-  @media (max-width: 960px) {
+  margin: 5px;
+  padding: 50px;
+  padding-top: 0px;
+  max-height: min-content;
+  @media (max-width: 850px) {
     visibility: hidden;
-    width: 0px;
-    margin: 0px;
   }
 }
 
 .bot img{
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  max-width: 150px;
-  max-height: 230px;
-  min-width:  50px;
-  min-height: 76px;
-
+  max-height: max-content;
+  width: 50%;
+  height: 50%;
+  margin: 5px;
 }
 
 .info{
-  font-family: inherit;
-  text-align: right;
+  margin: 5px;
+  padding: 5px;
 }
 
 .info p{
-  margin-top: 5px;
-  padding: 10px;
-  font-size: 11px; 
+  margin: 5px;
+  padding: 5px;
+  font-size: 12px;
+  float: left; 
 }
-.info button{
+
+#button{
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.socials button{
   background-color: var(--purple);
   color: white;
   font-size: 100%;
-  margin: 5px;
-  padding: 5px;
-  max-width: 550px;
-  max-height: 50px;
+  padding: 10px;
+  max-height: 800px;
   width: 100%;
   height: 100%;
-  border-radius: 10px 25px;
+  border-radius: 35px 15px;
   border: none; 
   transition: background-color 0.8s ease-out;
 }
 
-.info button:hover{
-  border-color: var(--gold);
+
+.socials button:hover{
   background-color: var(--gold);
   color: var(--purple);
 }
